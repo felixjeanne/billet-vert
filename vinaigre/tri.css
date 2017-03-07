@@ -1,0 +1,125 @@
+body {
+    max-width: 600px;
+    min-width: 100px;
+    border: 20px #828282 solid;
+    padding: 20px 50px 50px 50px;
+    height: 100%;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    transform: scale(0.6);
+}
+
+
+/*On passe à la nav*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.calendar {
+    border-top: 20px #828282 solid;
+    border-left: 2px #828282 solid;
+    border-right: 2px #828282 solid;
+    border-bottom: 2px #828282 solid;
+    padding: 12px 10px 12px 10px;
+    text-align: center;
+    color: #828282;
+}
+
+.logo {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #828282;
+    border: 2px #828282 solid;
+    padding: 14px 5px 1px 5px;
+    text-align: center;
+}
+
+.lienlogo {
+    text-decoration: none;
+    color: #828282;
+}
+
+
+/*On passe à la section*/
+
+section {
+    background-color: #828282;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+h1 {
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    padding-left: 5%;
+    padding-right: 5%;
+    word-wrap: break-word;
+}
+
+hr {
+    border-top: 8px white solid;
+    width: 30%;
+    margin-left: 5%;
+    min-width: 100px;
+    margin-top: -30px;
+}
+
+section p {
+    padding-left: 5%;
+    color: white;
+    padding-right: 5%;
+    font-size: 1.2em;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    word-wrap: break-word;
+    border-bottom: 3px white solid;
+    padding-bottom: 8px;
+    line-height: 200%;
+}
+
+.link:hover {
+    background: white;
+    color: #828282;
+}
+
+
+/*On passe au footer*/
+
+footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer p img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/*On va faire nos media queries (au moins la base)*/
+
+@media all and (min-width: 400px) {
+    .link {
+        border: 3px white solid;
+        padding: 8px 10px 8px 10px;
+    }
+}
+
+
+/*Partie font awesome*/
+
+.colored {
+    color: #828282;
+}

@@ -1,0 +1,222 @@
+body {
+    font-family: "Oxygen", sans-serif;
+    background-color: #A9C0DD;
+}
+
+
+/*debut du css pour le header*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+}
+
+#monlogo {
+    height: 50px;
+    width: 50px;
+}
+
+.title {
+    margin-top: -70px;
+    padding-left: 70px;
+}
+
+#pmonlogo {
+    margin-top: -20px;
+    padding-left: 70px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+nav li {
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #AB3131;
+    font-weight: bold;
+    border-bottom: 1px #AB3131 solid;
+}
+
+
+/*fin du css pour le header*/
+
+
+/*debut de la bannière */
+
+#banniere_image {
+    background: url(images/formentera.jpg) no-repeat;
+    background-position: center;
+    margin-top: 25px;
+    height: 300px;
+    position: relative;
+    border-radius: 0px 0px 5px 5px;
+}
+
+#bannière_description {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    bottom: 0;
+    height: 60px;
+    background-color: rgba(24, 24, 24, 0.8);
+    border-radius: 0px 0px 5px 5px;
+}
+
+#bannière_description p {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #AB3131;
+}
+
+.bouton_rouge {
+    border: 2px #AB3131 solid;
+    border-radius: 5px;
+    padding: 2px 4px 2px 4px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #AB3131;
+    background-color: #A9C0DD;
+}
+
+
+/*fin de la bannière */
+
+
+/*début de la section*/
+
+.logo2 {
+    height: 40px;
+    width: 40px;
+}
+
+section {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+article:nth-child(1) {
+    flex: 3;
+    border: 2px white solid;
+    background-color: #A9C0DD;
+    margin-right: 50px;
+}
+
+article p {
+    margin-left: 10px;
+}
+
+aside:nth-child(2) {
+    flex: 1;
+    border: 2px white solid;
+    border-radius: 4px;
+    height: 20%;
+}
+
+.matete {
+    height: 70px;
+    width: 70px;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+aside h1 {
+    margin: 5px 5px 20px 5px;
+}
+
+aside p {
+    margin: 5px 5px 5px 5px;
+}
+
+.textalignp {
+    text-align: center;
+}
+
+.imageligne {
+    height: 40px;
+    width: 40px;
+}
+
+aside img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/*fin de la section*/
+
+
+/*debut du footer*/
+
+footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.photal p {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.toffooter {
+    border: 1px black solid;
+    height: 40px;
+    width: 40px;
+}
+
+.listes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -15px;
+}
+
+
+/*Faisons un peu de media queries*/
+
+@media all and (max-width: 900px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+    }
+    nav a {
+        text-decoration: none;
+        color: #AB3131;
+        font-weight: bold;
+        border-bottom: 0px;
+    }
+    #banniere_image {
+        display: none;
+    }
+    section {
+        flex-direction: column;
+    }
+    article, aside {
+        width: auto;
+        margin-bottom: 15px;
+    }
+    footer div h3, footer p, div ul li {
+        font-size: 0.8em;
+    }
+    .toffooter {
+        height: 50px;
+        width: 50px;
+    }
+}
